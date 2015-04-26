@@ -33,3 +33,18 @@ m <- mean(data, ...)
 x$setmean(m)
 m
 }
+### Sample Output#########
+# > y <- c(3,5,7,9)
+# > n <- makeVector(y)
+# > n$get()
+# [1] 3 5 7 9
+# > n$getmean()
+# NULL
+# > cachemean(n)
+# [1] 6
+# > cachemean(n)
+# getting cached data
+# [1] 6
+# > n$getmean()
+# [1] 6
+# > 
